@@ -1,0 +1,51 @@
+#include <iostream>
+
+using namespace std;
+
+//int(a) = 32 vs int a = 32 vs int a(32) 有啥實質差別???
+//變數宣告在main()外面跟宣告在裡面差在哪???
+
+int main(){
+    int a = 32;
+    cout<< "a:"<<a <<endl;
+
+    float b = 49;
+    cout<< "b:"<<b <<endl;
+    //浮點數取不出餘數，系統無法辨別值的型態，應可解決???
+
+    int c = 30;
+    cout<< "c:"<<c<<endl;
+
+    cout<< "a + b :"<< a+b<<endl;
+    cout<< "a - b :"<< a-b<<endl;
+    cout<< "a * b :"<< a*b<<endl;
+    cout<< "a / b :"<< a/b<<endl;
+
+    cout<< "a % c :"<< a%c<<endl;
+
+    //數字型態轉換
+    //way1
+    int x =20;
+    double y =1.1414;
+    int z = int (y);
+    cout<<y<<endl;
+    cout<<x+z<<endl;
+    
+    //way2 利用static_cast<>()轉換數字型態。
+    int z1 = static_cast<int>(y);
+    cout<<z1<<endl;
+
+    //單純字元表示
+    char a1='*';
+
+    cout<<a1<<endl;
+    cout<<a1<<a1<<endl;
+    cout<<a1<<a1<<a1<<endl;
+    
+    char m='m';
+    int n = 1;
+    cout<< m + n <<endl;  //為啥印出來是99???
+
+    system("pause");
+    return 0;
+}
