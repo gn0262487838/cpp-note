@@ -1,0 +1,127 @@
+
+#include<iostream>
+
+using namespace std;
+
+class demo{
+    //建構函式到底有啥用???
+    public:
+    //設置建構函數，建構函數主要目的是設定data member
+    demo();//o parameter
+    demo(int n);//1 parameter
+    demo(int n,int m);//2 parameter
+
+    void set_a(int);
+    void set_b(int);
+    int get_a();
+    int get_b();
+    int do_something();
+    
+    private:
+    int a;
+    int b;
+};
+
+demo::demo(){
+    set_a(1);
+    set_b(1);
+}
+
+demo::demo(int n){
+    set_a(n);       //這裡set_a(int n)為啥不行擺int???
+    set_b(n);
+}
+
+demo::demo(int n,int m){
+    set_a(n);
+    set_b(m);
+}
+
+void demo::set_a(int n){
+    a = n;
+}
+
+void demo::set_b(int n){
+    b = n;
+}
+
+int demo::get_a(){
+    return a;
+}
+
+int demo::get_b(){
+    return b;
+}
+
+int demo::do_something(){
+    return get_a()+get_b(); //呼叫get的member fun.
+}
+
+
+
+int main(){
+    demo t1;
+    demo t2(22);
+    demo t3(22,33);
+
+    cout<<t1.do_something()<<endl;
+    cout<<t2.do_something()<<endl;
+    cout<<t3.do_something()<<endl;
+    system("pause");
+    return 0;
+
+}
+
+
+
+
+
+
+/*
+
+#include<iostream>
+
+using namespace std;
+
+class cross{
+    public:
+        cross(int);
+        void set(int);
+        int fun_cross();
+        int num1;
+        int num2;
+    private:
+        int a;
+};
+
+cross::cross(int n){
+    set(n);             //set(int n)不用再宣告一次int，也不需要在set前void宣告，因為void set(int n) != set(n)，兩個是不一樣的)
+}
+
+void cross::set(int n){
+    a = n;
+}
+
+int cross::fun_cross(){
+    num1 = 1;
+    num2 = 1;
+
+    for(int i=1;i<=a;i++){
+        num1 = num1 * num2;
+        num2++;
+    }
+
+    return num1;    
+}
+
+int main(){
+    cross c(5);
+    cout<<c.fun_cross()<<endl;
+    cross c1(6);                       //為啥c(6)會印不出來，而是要改成cross c1(6),cout<<c1.fun_cross()<<endl;???
+    cout<<c1.fun_cross()<<endl;
+
+    system("pause");
+    return 0;
+}
+
+*/
