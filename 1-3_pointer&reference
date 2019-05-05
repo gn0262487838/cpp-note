@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(){
+    //a 為string variable
+    string a = "fuck you!";
+    cout<< a <<endl;
+    //b 為對a的pointer,似指定新的變數。&為adress-of operator，*為用來宣告指標(可視為動詞)
+    string* b = &a;
+    cout<< b <<endl;
+    cout<< *b<<endl;
+
+    cout<<"---------"<<endl;
+    //c為對a的reference
+    //&c=a vs c=a 差在哪邊???
+    string &c = a;
+    cout<< c <<endl;
+    //d為另一個pointer
+    //new必須放在pointer裡面
+    string* d = new string("fuck you!");
+    cout<< d <<endl;
+    system("pause");
+    return 0;
+}
+//為啥第一個string後要加a,而new string 則不用加變數???
+//pointer vs reference ??? i don't understand QQ
