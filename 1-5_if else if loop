@@ -1,0 +1,38 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a;
+    int b;
+    cout<<"Press a natural number"<<endl;
+    cin>>a;
+    cout<<"Press a another natural number"<<endl;
+    cin>>b;
+    cout<<"show me what's happen!"<<endl;
+    cout<<"The answer is"<<endl;
+    if ( a > b ){
+        cout<<"that is impossible!"<<endl;
+    }
+    else if( a == b ){
+        cout<<"Is it?"<<endl;
+    }
+    else if( a < b ){
+        cout<<"haha that's right"<<endl;
+    }
+    else{
+        cout<<"no happen"<<endl;
+    }
+    
+    system("pause");
+    return 0;
+}
+
+/*
+觀念注意!!!
+if (a = 1){}
+is the same as
+            int a = 1;
+            if(a){};
+*/
