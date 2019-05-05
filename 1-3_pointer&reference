@@ -26,3 +26,29 @@ int main(){
 }
 //為啥第一個string後要加a,而new string 則不用加變數???
 //pointer vs reference ??? i don't understand QQ
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main(void){
+    int a = 22;
+    cout<<"a:"<<a <<endl;
+    cout<<"&a:"<< &a<<endl;
+
+    int* b = &a;
+    *b = 50;
+    cout<<"a':"<< *b <<endl;
+    cout<<"&a':"<< b <<endl;
+    cout<<"a:"<<a <<endl;
+    cout<<"&a':"<< &*b<<endl;
+    //cout<< &b<<nedl; 為啥位置會改變???
+
+    system("pause");
+    return 0;
+
+}
+
+*/
