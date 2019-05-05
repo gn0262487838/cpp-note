@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+//switch (必須放常數值literal，或具有常數值得變數。)
+
+int main(){
+    
+    int A;
+    cout<<"press a natural number A from 1 to 9!"<<endl;
+    cin>>A;
+    cout<<"Siri will tell you A "<<endl;
+    switch(A){
+        case 1:
+            cout<<"belong to 1..."<<endl;
+            break;
+        case 2:
+            cout<<"belong to 2..."<<endl;
+            break;
+        case 3:
+            cout<<"belong to 3..."<<endl;
+            break;
+        case 4:
+            cout<<"belong to 4..."<<endl;
+            break;
+        case 5:
+            cout<<"belong to 5..."<<endl;
+            break;
+        case 6:
+            cout<<"belong to 6..."<<endl;
+            break;
+        case 7:
+            cout<<"belong to 7..."<<endl;
+            break;
+        case 8:
+            cout<<"belong to 8..."<<endl;
+            break;
+        case 9:
+            cout<<"belong to 9..."<<endl;
+            break;
+        default:
+            cout<<"It's undefined"<<endl;      
+    }
+
+    system("pause");
+    return 0;
+}
