@@ -1,0 +1,27 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+        int c;
+        float d;
+        cout<<"This is a simple calculator"<<endl;
+        cout<<"please press a number c and enter,c is any natural number:"<<endl;
+        cin>> c;
+        cout<<"please press a number d and enter,d is any number:"<<endl;
+        cin>> d;
+        
+        cout<< "The Answer is"<<endl;
+        cout<< "c + d :"<< c+d<<endl;
+        cout<< "c - d :"<< c-d<<endl;
+        cout<< "c * d :"<< c*d<<endl;
+        cout<< "c / d :"<< c/d<<endl;
+        
+        cout<<"show me which is bigger!"<<endl;
+        cout<< (c>d ? "c is bigger":"d is bigger")<<endl;
+        //(c>d ? "ture statement":"false statement")，注意邏輯關係。        
+
+        system("pause");
+        return 0;
+}
