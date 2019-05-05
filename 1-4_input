@@ -25,3 +25,42 @@ int main(){
         system("pause");
         return 0;
 }
+
+
+
+
+/*
+#include <iostream>
+
+using namespace std;
+
+int main(){        
+        int a = 1;
+        cout<<a<<endl;
+        cout<<&a<<endl;
+        int b = ++a;
+        cout<<b<<endl;
+        cout<<&b<<endl;
+        int c = ++b;
+        cout<<c<<endl;
+        cout<<&c<<endl;
+        cout<<a<<endl;
+        cout<<&a<<endl;
+        cout<<b<<endl;
+        cout<<&b<<endl;
+        
+        system("pause");
+        return 0;
+}
+
+/*
+int a = 1;
+int b = ++a; 此時a值已由1自動遞增為2
+int c = ++b; 此時b值已由2自動遞增為3
+cout<<a<<endl;
+cout<<b<<endl;
+cout<<c<<endl;
+為啥印出來的a、b的值會被取代，因為程式是由上讀到下由左到右，故會一行一行執行程式碼。
+*/
+
+*/
