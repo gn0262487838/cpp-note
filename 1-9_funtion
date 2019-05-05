@@ -1,0 +1,93 @@
+
+#include <iostream>
+
+using namespace std;
+
+//宣告函數原型
+void fun_changeLine(void);
+//也可不經宣告直接定義函數使用，下面宣告即是範例。
+void fun_printf(int a){
+    cout<<a<<endl;
+}
+
+int fun_compareN(int b,int c){
+    if (b>c){
+        return b;
+        }
+    else if(b<c){
+        return c;
+        }
+    else{
+        return 0; //那如果是b==c呢???
+        }   
+    }
+
+/*
+1!=1
+2!=2
+3!=2*3=6
+4!=6*4=24
+5!=24*5
+*/
+
+long fun_cross(long p){
+    if(p>0){
+    long cross = 1; //初始值要設定，不然會有錯誤。
+    long d=1;
+        for(d;d<=p;d++){
+        cross = cross*d; //初始值要設定，不然會有錯誤。
+       }
+        return cross;
+    }
+    else if(p==0){
+        return p = 0;
+    }
+    else{
+        return p = -1;
+    }
+}
+//數字大一點的100!就算不出來，要怎解決???
+//負階層呢???
+//for 迴圈能取中間計算的值嗎???
+
+
+int main(){
+    int a;
+    int b;
+    int c;
+    int p;
+    cout<<"press a int. number a:"<<endl;
+    cin>>a;
+    cout<<"press a int. number b and c:"<<endl;
+    cin>>b;
+    cin>>c;
+    cout<<"press a int. number p:"<<endl;
+    cin>>p;
+
+
+    for(;a>0;a--){
+
+        if(a>10){
+            break;
+        }
+        fun_changeLine();
+        fun_printf(a);
+    }
+    fun_changeLine();
+    cout<<fun_compareN(b,c)<<"is bigger!"<<endl;
+
+    fun_changeLine();
+    cout<<fun_cross(p)<<endl;
+
+    system("pause");
+    return 0;
+
+}
+
+//以下兩個自訂函數可寫在int main()前面，宣告函數原型後面。
+
+//印出新行的函數
+void fun_changeLine(void){
+    cout<<endl;
+}
+
