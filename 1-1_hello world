@@ -1,0 +1,41 @@
+//引入逼準程式庫中相關的輸入輸出程式
+//如是自己建立header file,則不用<a.h>，用""a.h"，a.h為舉例非一定格式
+#include <iostream>
+
+//引入標準程式庫中相關的字串程式
+#include <string>
+
+//std 為標準程式庫中的命名空間
+/*如不使用std,則需要cout前加上std:: ex.std::cout 這樣電腦才會識別cout是什麼
+  同理endl也是,但m不用加,因為m是我們自己令的變數。
+  ex.
+    std::string m("you are a idot !");
+    std::cout << std::endl;
+    std::cout << m << std::endl;
+    std::cout << std::endl <<std::endl;
+*/
+using namespace std; 
+
+//void 被用來declare 'parameter list' or 'return value'
+//下面建立名稱為m的string object
+//小括號為string的constructor
+//雙引號為字串字面常數
+//cout 輸出 vs cin 輸入
+//endl 相似於'\n'
+//system 可命令dos指令
+//return 0 回傳值為 0 到系統
+
+int main(void){
+    string m("you are a idot !"); 
+    cout<<endl;
+    cout<<m<<endl;
+    cout<<endl<<endl;
+    
+    
+    //上述輸出指令可寫成同一行,ex.cout<<endl<<m<<endl<<endl;
+
+    system("pause");
+    return 0;
+}
+
+//所有可執行程式都需定義main()函數喔!!!
