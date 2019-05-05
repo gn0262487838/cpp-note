@@ -1,0 +1,57 @@
+
+#include <iostream>
+
+using namespace std;
+
+/*while(設定條件測試){...}
+1.設定控制變數，控制變數要設在while前
+2.設定條件測試
+3.調整控制變數值(記得喔!不然會變成infinite loop)
+*/
+
+//for(宣告控制變數；設定條件測試；控制變數值){...}
+
+//while 常用在非明確重覆次數的loop,並使用break可提前跳出loop。使用coutinue可使迴圈進行下一輪!!!
+//for 常用在明確重覆次數的loop。
+
+int main(){
+    int a;
+    cout<<"press you want to try to do how times"<<endl;
+    cin>>a;
+    while(a>0){
+        cout<<"*"<<endl;
+        a--;                //--a跟a--意義不一樣喔!!!
+    }
+    
+    //for宣告宣告變數在for前或在()裡宣告都沒差喔!!!
+    
+    for(int b =5;b>0;--b){
+        cout<<"**"<<endl;
+    }
+
+    //do-while 屬於後側loop，while & for 屬於前側loop
+
+    int c =1;
+    do {
+        cout<<"***"<<endl;
+        c--;
+    }while(c>0);
+
+    system("pause");
+    return 0;
+    
+}
+
+/*
+int main(void){
+    int a = 1;
+    cout<<a<<endl;
+    cout<<++a<<endl;
+    cout<<++a<<endl;
+    cout<<++a<<endl;
+
+    system("pause");
+    return 0;
+}
+這段code是for(a=1;a>0;a++){...}的原始想法。
+*/
