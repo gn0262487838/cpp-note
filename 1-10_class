@@ -1,0 +1,41 @@
+
+#include <iostream>
+
+using namespace std;
+//宣告類別
+class demo1{
+    //在public宣告date member跟member function。
+    public:
+        int x;
+        int y;
+        fun_plus();
+    //    
+    private:
+        int z;
+        fun_cross(){
+            return x*y*z;
+        }
+}; //這裡一定要加分號喔!!!宣告類別也算一段statement。
+
+//也可把成員函數的實作寫在宣告類別的裡面，小程式沒差但大程式有差，通常會分開寫，因大程式通常都把宣告類別放在標頭檔裡!!!
+
+//實作demo1的fun_plus()成員函數。
+
+int demo1::fun_plus(){
+    return x+y;
+}
+
+
+//demo1後要加::，不然程式會把fun_plus當成一般函數!!!
+
+int main(){
+    //宣告並建立demo1型態的物件t。
+    demo1 t;
+    //宣告並建立完t後，可用t.指派數值給成員變數，也可用來呼叫成員函數。
+    cin>>t.x;
+    cin>>t.y;
+    cout<<t.fun_plus()<<endl;
+
+    system("pause");
+    return 0;
+}
