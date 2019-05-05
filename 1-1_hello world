@@ -39,3 +39,19 @@ int main(void){
 }
 
 //所有可執行程式都需定義main()函數喔!!!
+
+/*
+#include <iostream>
+
+int main(){
+    std::cout<< "Hello world !"<<std::endl;
+    system("pause");
+
+}
+
+*/
+
+
+//test1跟test2呈現出的結果是一致喔!!!
+
+//為啥這時不需要寫return 0 ???
