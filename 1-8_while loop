@@ -1,0 +1,43 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    
+    cout<<"way1:"<<endl;
+    double an ;
+    cout<<"please press a number an"<<endl;
+    cin>>an;
+    cout<<"calculate the sum of 1+...+an:"<<endl;
+
+    while(an>0){
+
+        int sum = (1 + an)* an / 2;
+        cout<<sum<<endl;
+        //an--;
+        //if break迴圈跳出，所以有沒有調整控制變數沒差。
+
+        if(an >= 0){  
+            //原if(a>=0)改成if(an>=0)，要注意問題的邏輯，當cout<<sum<<endl放在if裡面，an=1是顯示不出來的。
+            //cout<<sum<<endl; 注意放在if裡面跟if上面的邏輯是不一樣喔。
+            break;
+        }
+    }
+
+    cout<<"way2"<<endl;
+    int a = 0;
+    int b;
+    cout<<"press a number b for calculate 1+2+3+...+b = :"<<endl;
+    cin>>b;
+    for(int i = 1;i<=b;i++){
+        a = a + i;
+        //cout<<a<<endl; code放在裡面是指做完一次印一次，似計算過程。
+    }
+    cout<<a<<endl;  //全部做完後印出最後的值，似解答
+
+    
+     system("pause");
+     return 0;
+
+}
