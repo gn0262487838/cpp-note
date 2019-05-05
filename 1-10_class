@@ -39,3 +39,120 @@ int main(){
     system("pause");
     return 0;
 }
+
+
+
+
+
+
+
+
+/*
+
+#include <iostream>
+
+using namespace std;
+
+class demo{
+    public:
+        int value;
+        void add(int);
+        void subtrast(int);
+        void cross(int);
+        void div(int);
+        void classclass(int);
+
+};
+
+void demo::add(int a){
+    value = value + a;
+}
+
+void demo::subtrast(int b){
+    value = value - b;
+}
+
+void demo::cross(int c){
+    value = value * c;
+}
+
+void demo::div(int d){
+    value = value / d;
+}
+
+void demo::classclass(int n){
+    int sum = 1;
+    for(int i=1;i<=n;i++){
+        sum = sum * i;
+    }
+    value = sum;
+}
+
+int main (){
+    demo m;
+    int x;
+    int y;
+    int z;
+    int w;
+    int w1;
+    int h;
+    cout<<"set number:"<<endl;
+    cin>>x;
+    m.value = x;
+    cout<<m.value<<endl<<endl;
+    
+    cout<<"plus:"<<endl;
+    cin>>y;
+    m.add(y);
+    cout<<m.value<<endl<<endl;
+    
+    cout<<"subtract:"<<endl;
+    cin>>z;
+    m.subtrast(z);
+    cout<<m.value<<endl<<endl;
+    
+    cout<<"cross:"<<endl;
+    cin>>w;
+    m.cross(w);
+    cout<<m.value<<endl<<endl;
+    
+    cout<<"div:"<<endl;
+    cin>>w1;
+    m.div(w1);
+    cout<<m.value<<endl<<endl;
+    
+    cout<<"set n to calculate 1x2x...xn= :"<<endl;
+    cin>>h;
+    m.classclass(h);
+    cout<<m.value<<endl;
+    
+    system("pause");
+    return 0;
+}
+
+/*
+我的疑問
+class demo{
+    public:
+        int cross(int);
+};
+
+int demo::cross(int n){
+    int sum =1;
+    for(int i=1;i<=n;i++){
+        sum = sum * i;
+    }
+    return sum;
+}
+
+int main (){
+    int y;
+    int sum=2; //sum 這裡的跟在demo::cross的sum是不一樣吧???
+    cin>>y;
+    demo t;
+    cout<<t.cross(y)<<endl;
+    cout<<sum<<endl;
+    system("pause");
+    return 0;
+}
+*/
